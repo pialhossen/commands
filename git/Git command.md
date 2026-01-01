@@ -162,6 +162,14 @@ Git create a branch from a commit
 
     git checkout -b <new-branch-name> <commit-id>
 
+Git Change remote url
+
+    git remote set-url origin [url]
+
+Git Get remote url
+
+    git remote get-url origin
+
 
 ### Replaceing master branch with another branch
 
