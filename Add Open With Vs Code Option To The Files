@@ -1,0 +1,7 @@
+sudo apt update
+sudo apt install python3-nautilus
+
+mkdir -p ~/.local/share/nautilus-python/extensions
+wget -qO ~/.local/share/nautilus-python/extensions/vscode.py https://raw.githubusercontent.com/harry-cpp/code-nautilus/master/code-nautilus.py
+
+nautilus -q
