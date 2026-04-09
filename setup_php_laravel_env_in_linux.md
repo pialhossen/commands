@@ -38,6 +38,18 @@ Enable PHP Mysqli
 
     sudo phpenmod mysqli
 
+Setup Composer
+
+    # Update your package list
+    sudo apt update
+    
+    # Install dependencies and Composer
+    sudo apt install curl php-cli php-mbstring git unzip -y
+    
+    # Download and install Composer globally
+    curl -sS https://getcomposer.org/installer | php
+    sudo mv composer.phar /usr/local/bin/composer
+
 Add Authentication To The PhpMyAdmin Config (config.inc.php) File For Enableing Auto Login
 
     /* Authentication type */
