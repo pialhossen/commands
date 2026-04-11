@@ -1,0 +1,19 @@
+move the extrected application to the standard locations
+
+sudo mv Postman /opt/Postman
+
+Create a symbolic link (so you can run it globally from base)
+
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+
+Create a desktop application icon
+
+nano ~/.local/share/applications/postman.desktop
+
+
+[Desktop Entry]
+Name=Postman
+Exec=/opt/Postman/Postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Type=Application
+Categories=Development;
