@@ -22,6 +22,10 @@ Check which PHP versions are available (install the latest)
 
     apt list php*
 
+Add Latest PHP Repository
+
+    sudo add-apt-repository ppa:ondrej/php -y
+
 Install PHP
 
     sudo apt install php8.4
