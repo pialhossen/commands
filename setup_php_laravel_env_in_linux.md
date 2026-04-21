@@ -38,6 +38,10 @@ Install PHP Mysqli And Some Necessary Extension For PhpMyAdmin
 
     sudo apt install php8.3-sqlite3 php8.3-cli php8.3-common php8.3-mbstring php8.3-xml php8.3-curl php8.3-mysql php8.3-zip php8.3-gd php8.3-bcmath php8.3-soap libapache2-mod-php8.3 php8.3-intl php8.3-readline -y
 
+Enable Apache2PHP Extension
+
+    sudo a2enmod php8.3
+
 Enable PHP Mysqli
 
     sudo phpenmod mysqli
