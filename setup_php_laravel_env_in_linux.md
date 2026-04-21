@@ -54,6 +54,27 @@ Setup Composer
     curl -sS https://getcomposer.org/installer | php
     sudo mv composer.phar /usr/local/bin/composer
 
+Create New Superuser Mysql
+
+    # Access the MySQL Shell
+    sudo mysql -u root
+
+    -- Create the user 'piyal' with the password '12345678'
+    CREATE USER 'piyal'@'localhost' IDENTIFIED BY '12345678';
+    
+    -- Grant all privileges (Superuser status)
+    GRANT ALL PRIVILEGES ON *.* TO 'piyal'@'localhost' WITH GRANT OPTION;
+    
+    -- Refresh privileges to apply changes
+    FLUSH PRIVILEGES;
+    
+    -- Exit the shell
+    EXIT;
+
+    # Check New User
+
+    mysql -u piyal -p
+
 Add Authentication To The PhpMyAdmin Config (config.inc.php) File For Enableing Auto Login
 
     /* Authentication type */
