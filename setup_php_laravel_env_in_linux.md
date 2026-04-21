@@ -6,6 +6,21 @@ Install Apache Server
 
     sudo apt install apache2
 
+Setup PHP File as the default File For Apache
+
+    sudo nano /etc/apache2/mods-enabled/dir.conf
+
+
+    
+    <IfModule mod_dir.c>
+        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+    </IfModule>
+
+
+
+    sudo systemctl restart apache2
+    
+
 To check if Apache is running
 
     sudo systemctl status apache2
