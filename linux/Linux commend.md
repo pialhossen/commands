@@ -93,3 +93,14 @@ z - Show pagetable - Dumps current pagetable info
 sudo apt update
 sudo apt install mtp-tools gvfs-backends gvfs-fuse
 ```
+
+### Create New User
+```
+adduser [user name]
+```
+
+### Give User The Root Privileges
+
+```
+usermod -aG sudo [user name]
+```
