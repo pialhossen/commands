@@ -104,3 +104,9 @@ adduser [user name]
 ```
 usermod -aG sudo [user name]
 ```
+
+### Copy Root User SSH To New User So You Can Log In To The Machine Using That Other User
+
+```
+cp -r --preserve=mode /root/.ssh /home/[user name]
+```
