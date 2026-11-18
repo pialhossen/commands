@@ -100,3 +100,7 @@ Add Authentication To The PhpMyAdmin Config (config.inc.php) File For Enableing 
     $cfg['Servers'][$i]['auth_type'] = 'config';
     $cfg['Servers'][$i]['user'] = 'username';
     $cfg['Servers'][$i]['password'] = 'password';
+
+Show Error While Running A Php Code
+
+    php -d display_errors=1 -d error_reporting=E_ALL artisan
